@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G. T. Vasanthaprabhu | AI/ML Engineer & Full-Stack Developer</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="G. T. Vasanthaprabhu | AI/ML Engineer & Full-Stack Developer" />
+  <meta name="description" content="Portfolio of G. T. Vasanthaprabhu - Computer Science Engineering graduate (CGPA 8.33) specializing in Generative AI, Machine Learning, Python, SQL, and Full-Stack Web Development." />
+  <meta name="keywords" content="Vasanthaprabhu, Portfolio, AI Engineer, Machine Learning, Full Stack Developer, Generative AI, Python, ReactJS, Dindigul, RVS College of Engineering" />
+  <meta name="author" content="G. T. Vasanthaprabhu" />
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="G. T. Vasanthaprabhu | AI/ML Engineer & Full-Stack Developer" />
+  <meta property="og:description" content="Computer Science Engineering graduate with expertise in Generative AI, Python, SQL, Data Analytics, and Full-Stack Web Development." />
+  <meta property="og:image" content="assets/images/avatar.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Interactive Constellation Canvas Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Ambient Background Glow Orbs -->
+  <div class="ambient-orb ambient-orb-1"></div>
+  <div class="ambient-orb ambient-orb-2"></div>
+  <div class="ambient-orb ambient-orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" id="nav-brand-logo">
+        <span class="logo-badge">VP</span>
+        <span>Vasanthaprabhu</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About & Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- View Resume CTA -->
+        <button class="nav-resume-btn trigger-resume-modal" id="nav-resume-trigger">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
+          <span>☰</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <div class="hero-badge-container">
+              <div class="status-badge">
+                <span class="status-pulse"></span>
+                <span>Seeking Entry-Level Roles in AI, Data & Software</span>
+              </div>
+            </div>
+
+            <p class="hero-title-greeting">Hello, world! I'm</p>
+            <h1 class="hero-name">G. T. <span class="text-gradient">Vasanthaprabhu</span></h1>
+
+            <!-- Animated Typewriter Role -->
+            <div class="hero-typing-wrapper">
+              <span>I am an&nbsp;</span>
+              <span id="typing-text">AI/ML Engineer</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <p class="hero-description">
+              Motivated and dedicated Computer Science Engineering graduate from 
+              <strong>R.V.S. College of Engineering (CGPA 8.33)</strong> with a solid foundation in 
+              <strong>Python, Generative AI (LLMs & RAG), SQL, and Full-Stack Web Development</strong>.
+              Passionate about engineering intelligent, scalable digital solutions for real-world impact.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary" id="hero-projects-cta">
+                <span>Explore Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <button class="btn btn-secondary trigger-resume-modal" id="hero-resume-cta">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>View Resume</span>
+              </button>
+
+              <a href="#contact" class="btn btn-secondary" id="hero-contact-cta">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div class="hero-social-strip">
+              <a href="https://github.com/Vasanthaprabhu7" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="GitHub Profile" id="hero-github-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/vasanthaprabhu" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="LinkedIn Profile" id="hero-linkedin-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+
+              <a href="mailto:vasanthaprabhu3072004@gmail.com" class="hero-social-link" title="Send Direct Email" id="hero-email-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+
+              <a href="tel:6382368204" class="hero-social-link" title="Phone Call" id="hero-phone-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Visual / Avatar Card -->
+          <div class="hero-visual-card">
+            <div class="avatar-wrapper">
+              <div class="avatar-glow-ring"></div>
+              <div class="avatar-inner">
+                <img src="assets/images/avatar.jpg" alt="G. T. Vasanthaprabhu - Software & AI Engineer" class="avatar-image" />
+              </div>
+
+              <!-- Floating Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="floating-badge-icon">🎓</div>
+                <div class="floating-badge-text">
+                  <strong>8.33 CGPA</strong>
+                  <span>R.V.S. College of Eng.</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="floating-badge-icon">⚡</div>
+                <div class="floating-badge-text">
+                  <strong>GenAI & Web</strong>
+                  <span>RAG • LLMs • Full Stack</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Numbers Strip -->
+        <div class="metrics-strip">
+          <div class="metric-box">
+            <div class="metric-number">8.33</div>
+            <div class="metric-label">Engineering CGPA (B.E. CSE)</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">3+</div>
+            <div class="metric-label">Flagship Software & AI Projects</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">10+</div>
+            <div class="metric-label">Technical Skills & Frameworks</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">2026</div>
+            <div class="metric-label">CSE Graduate Year</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT & EDUCATION (BENTO GRID) ==================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">About & Background</div>
+          <h2 class="section-title">Bridging <span class="text-gradient">Engineering, AI & Code</span></h2>
+          <p class="section-subtitle">A quick look into my professional mission, academic track record, and communication proficiencies.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento Bio -->
+          <div class="bento-card bento-bio">
+            <h3 class="bento-card-title">
+              <div class="bento-title-icon">🎯</div>
+              <span>Career Objective & Vision</span>
+            </h3>
+            <p class="bento-text">
+              Motivated, enthusiastic, and dedicated Computer Science Engineering graduate with a strong foundation in 
+              <strong>Python, SQL, Generative AI, and Data Analytics</strong>. Seeking an entry-level opportunity in software development, 
+              data analytics, or artificial intelligence where I can apply my technical knowledge, programming skills, and problem-solving abilities 
+              to real-world challenges.
+            </p>
+            <p class="bento-text">
+              I am eager to learn new technologies, work collaboratively with multidisciplinary engineering teams, develop efficient and innovative solutions, 
+              and contribute to the growth and success of the organization while continuously improving my technical and professional skills.
+            </p>
+          </div>
+
+          <!-- Bento Highlights -->
+          <div class="bento-card bento-profile-highlight">
+            <h3 class="bento-card-title">
+              <div class="bento-title-icon">🚀</div>
+              <span>Key Strengths</span>
+            </h3>
+            <ul class="highlights-list">
+              <li class="highlight-item">
+                <span class="highlight-check">✔</span>
+                <div><strong>Generative AI & LLMs:</strong> Hands-on implementation of RAG pipelines, fine-tuning workflows, and NLP analytics.</div>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-check">✔</span>
+                <div><strong>Full-Stack Problem Solver:</strong> Experienced with modern JavaScript, ReactJS, Python backends, and SQL schemas.</div>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-check">✔</span>
+                <div><strong>Analytical Mindset:</strong> Data preprocessing, exploratory analysis (EDA), and machine learning classification.</div>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-check">✔</span>
+                <div><strong>Agile & Collaborative:</strong> Industry internship experience with team-driven sprints and clean code practices.</div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bento Education -->
+          <div class="bento-card bento-education">
+            <h3 class="bento-card-title">
+              <div class="bento-title-icon">🏛️</div>
+              <span>Academic Education</span>
+            </h3>
+            <div class="edu-timeline">
+              <!-- College -->
+              <div class="edu-item">
+                <div class="edu-item-header">
+                  <div class="edu-institution">R.V.S. COLLEGE OF ENGINEERING</div>
+                  <span class="edu-badge-score">CGPA: 8.33 / 10</span>
+                </div>
+                <div class="edu-degree">Bachelor of Engineering (B.E.) – Computer Science and Engineering, Dindigul</div>
+                <div class="edu-period">2022 – 2026 • Undergraduate Degree</div>
+              </div>
+
+              <!-- School -->
+              <div class="edu-item">
+                <div class="edu-item-header">
+                  <div class="edu-institution">VISWA VIDHYALAYA MATRIC HIGHER SEC SCHOOL</div>
+                  <div style="display: flex; gap: 0.5rem;">
+                    <span class="edu-badge-score">HSC: 77%</span>
+                    <span class="edu-badge-score">SSLC: 86%</span>
+                  </div>
+                </div>
+                <div class="edu-degree">Higher Secondary Certificate & Secondary School Leaving Certificate</div>
+                <div class="edu-period">Matriculation Secondary & Higher Secondary Education</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Languages -->
+          <div class="bento-card bento-languages">
+            <h3 class="bento-card-title">
+              <div class="bento-title-icon">🌐</div>
+              <span>Languages</span>
+            </h3>
+            <div class="languages-container">
+              <div class="language-pill-card">
+                <div class="lang-info">
+                  <strong>Tamil</strong>
+                  <span>Mother Tongue</span>
+                </div>
+                <span class="lang-badge lang-native">Native</span>
+              </div>
+
+              <div class="language-pill-card">
+                <div class="lang-info">
+                  <strong>English</strong>
+                  <span>Professional Communication</span>
+                </div>
+                <span class="lang-badge lang-conv">Conversational</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS MATRIX ==================== -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Technical Matrix</div>
+          <h2 class="section-title">Core Skills & <span class="text-gradient">Technologies</span></h2>
+          <p class="section-subtitle">Specialized technical proficiencies spanning Artificial Intelligence, Full-Stack Development, and Data Systems.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: Generative AI -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🤖</div>
+              <div>
+                <strong>Generative AI & LLMs</strong>
+                <span class="skill-badge">Advanced Focus</span>
+              </div>
+            </div>
+            <p class="skill-desc">Building intelligent agents, LLM integrations, Retrieval-Augmented Generation (RAG) architectures, and fine-tuning pipelines.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-chip">RAG Pipelines</span>
+              <span class="skill-tag-chip">Fine-Tuning</span>
+              <span class="skill-tag-chip">LLMs</span>
+              <span class="skill-tag-chip">Prompt Design</span>
+            </div>
+          </div>
+
+          <!-- Skill 2: Machine Learning & NLP -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🧠</div>
+              <div>
+                <strong>Machine Learning & NLP</strong>
+                <span class="skill-badge">Core Competency</span>
+              </div>
+            </div>
+            <p class="skill-desc">Supervised classification, natural language processing, deep learning fundamentals, and predictive modeling.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-chip">Machine Learning</span>
+              <span class="skill-tag-chip">Deep Learning</span>
+              <span class="skill-tag-chip">NLP</span>
+              <span class="skill-tag-chip">Scikit-Learn</span>
+            </div>
+          </div>
+
+          <!-- Skill 3: Python Development -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🐍</div>
+              <div>
+                <strong>Python Ecosystem</strong>
+                <span class="skill-badge">Primary Language</span>
+              </div>
+            </div>
+            <p class="skill-desc">End-to-end Python programming for algorithmic solutions, backend scripting, automation, and statistical computing.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-chip">Python 3</span>
+              <span class="skill-tag-chip">Pandas</span>
+              <span class="skill-tag-chip">NumPy</span>
+              <span class="skill-tag-chip">OOP</span>
+            </div>
+          </div>
+
+          <!-- Skill 4: Query & Relational Databases -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🗄️</div>
+              <div>
+                <strong>SQL & Databases</strong>
+                <span class="skill-badge">Data Persistence</span>
+              </div>
+            </div>
+            <p class="skill-desc">Relational database query design, joins, normalization, schema modeling, and backend database integrations.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-chip">SQL</span>
+              <span class="skill-tag-chip">Schema Design</span>
+              <span class="skill-tag-chip">Query Optimization</span>
+              <span class="skill-tag-chip">Relational Models</span>
+            </div>
+          </div>
+
+          <!-- Skill 5: Full Stack Web Development -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">⚛️</div>
+              <div>
+                <strong>Frontend & ReactJS</strong>
+                <span class="skill-badge">Web Architecture</span>
+              </div>
+            </div>
+            <p class="skill-desc">Interactive user interfaces with ReactJS, modular component design, responsive mobile-first layouts, and state management.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-chip">ReactJS</span>
+              <span class="skill-tag-chip">JavaScript (ES6+)</span>
+              <span class="skill-tag-chip">HTML5</span>
+              <span class="skill-tag-chip">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Skill 6: Data Analytics & EDA -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">📊</div>
+              <div>
+                <strong>Data Analytics</strong>
+                <span class="skill-badge">Insights & EDA</span>
+              </div>
+            </div>
+            <p class="skill-desc">Transforming raw unstructured data into actionable strategic insights via exploratory analysis, trend identification, and data visualization.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-chip">EDA</span>
+              <span class="skill-tag-chip">Data Cleaning</span>
+              <span class="skill-tag-chip">Visualization</span>
+              <span class="skill-tag-chip">Trend Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE / INTERNSHIP ==================== -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Work Experience</div>
+          <h2 class="section-title">Industry <span class="text-gradient">Internship</span></h2>
+          <p class="section-subtitle">Real-world corporate exposure in modern software development and web-based engineering practices.</p>
+        </div>
+
+        <div class="experience-container">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role-title">Full Stack Web Development Intern</h3>
+                <div class="exp-company">Main Flow Services and Technologies Pvt. Ltd.</div>
+              </div>
+              <div class="exp-period-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>05/07/2025 – 05/08/2025</span>
+              </div>
+            </div>
+
+            <ul class="exp-points-list">
+              <li class="exp-point">
+                Gained hands-on exposure to the <strong>end-to-end web application development process</strong>, from frontend layouts to backend connectivity.
+              </li>
+              <li class="exp-point">
+                Worked on practical development tasks with a focus on building, debugging, and improving <strong>scalable, user-centric web solutions</strong>.
+              </li>
+              <li class="exp-point">
+                Enhanced deep understanding of application directory structures, modern development workflows, and robust technical implementation standards.
+              </li>
+              <li class="exp-point">
+                Contributed effectively during team activities, technical standups, and peer reviews while strengthening communication and cross-functional coordination skills.
+              </li>
+              <li class="exp-point">
+                Improved analytical thinking, attention to detail, adaptability, and professional engineering work practices through rigorous project-based learning.
+              </li>
+            </ul>
+
+            <div class="exp-tech-tags">
+              <span class="exp-tech-pill">Full-Stack Development</span>
+              <span class="exp-tech-pill">Web Application Architecture</span>
+              <span class="exp-tech-pill">Frontend Implementation</span>
+              <span class="exp-tech-pill">Agile Collaboration</span>
+              <span class="exp-tech-pill">Technical Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SHOWCASE ==================== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Engineering Portfolio</div>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications applying AI, machine learning classification, data intelligence, and full-stack software.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="projects-filter-bar">
+          <button class="project-filter-btn active" data-filter="all">All Projects (3)</button>
+          <button class="project-filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="project-filter-btn" data-filter="fullstack">Web & Systems</button>
+          <button class="project-filter-btn" data-filter="analytics">Data Analytics</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Blood Donation Platform -->
+          <article class="project-card" data-category="ai fullstack">
+            <div class="project-thumb-box">
+              <img src="assets/images/blood-donation.jpg" alt="Real Time Smart Blood Donation Coordination System" class="project-thumb-img" />
+              <div class="project-badges-overlay">
+                <span class="project-category-badge">Full Stack & HealthTech</span>
+                <span class="project-year-badge">2025 – 2026</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Real Time Smart Blood Donation Coordination System</h3>
+              <p class="project-excerpt">
+                Centralized platform connecting hospitals and eligible blood donors in real time. Matches donors based on blood group, geolocation, and eligibility, sending instant automated emergency requests.
+              </p>
+              <div class="project-stack-wrap">
+                <span class="project-stack-tag">Python</span>
+                <span class="project-stack-tag">ReactJS</span>
+                <span class="project-stack-tag">SQL</span>
+                <span class="project-stack-tag">Real-Time Alerts</span>
+                <span class="project-stack-tag">Geolocation</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-project-detail" data-project="blood">
+                  <span>Deep Dive Details</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/Vasanthaprabhu7" target="_blank" rel="noopener noreferrer" class="btn-project-github" title="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Social Media Analytics -->
+          <article class="project-card" data-category="ai analytics">
+            <div class="project-thumb-box">
+              <img src="assets/images/social-analytics.jpg" alt="Social Media Analytics Using Python" class="project-thumb-img" />
+              <div class="project-badges-overlay">
+                <span class="project-category-badge">NLP & Analytics</span>
+                <span class="project-year-badge">2026</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Social Media Analytics Using Python</h3>
+              <p class="project-excerpt">
+                Analyzed high-volume social media data to uncover engagement patterns and user interaction trends. Implemented data processing pipelines to decipher sentiment scores and audience behavior.
+              </p>
+              <div class="project-stack-wrap">
+                <span class="project-stack-tag">Python</span>
+                <span class="project-stack-tag">Pandas</span>
+                <span class="project-stack-tag">NumPy</span>
+                <span class="project-stack-tag">NLP / Sentiment</span>
+                <span class="project-stack-tag">Data Insights</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-project-detail" data-project="social">
+                  <span>Deep Dive Details</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/Vasanthaprabhu7" target="_blank" rel="noopener noreferrer" class="btn-project-github" title="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Customer Churn Prediction -->
+          <article class="project-card" data-category="ai analytics">
+            <div class="project-thumb-box">
+              <img src="assets/images/churn-prediction.jpg" alt="Customer Churn Prediction Platform" class="project-thumb-img" />
+              <div class="project-badges-overlay">
+                <span class="project-category-badge">Machine Learning</span>
+                <span class="project-year-badge">2026</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Customer Churn Prediction Platform</h3>
+              <p class="project-excerpt">
+                Machine learning classification model built using Python to identify at-risk customers. Conducted exploratory data analysis, feature engineering, and trained predictive models to protect retention.
+              </p>
+              <div class="project-stack-wrap">
+                <span class="project-stack-tag">Python</span>
+                <span class="project-stack-tag">Scikit-Learn</span>
+                <span class="project-stack-tag">Pandas</span>
+                <span class="project-stack-tag">NumPy</span>
+                <span class="project-stack-tag">EDA</span>
+                <span class="project-stack-tag">Classification</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-project-detail" data-project="churn">
+                  <span>Deep Dive Details</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="https://github.com/Vasanthaprabhu7" target="_blank" rel="noopener noreferrer" class="btn-project-github" title="View on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESUME SECTION ==================== -->
+    <section id="resume" class="resume-section-page">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Curriculum Vitae</div>
+          <h2 class="section-title">Professional <span class="text-gradient">Resume</span></h2>
+          <p class="section-subtitle">Verified academic qualifications, technical proficiencies, engineering projects, and corporate internship.</p>
+        </div>
+
+        <div class="resume-showcase-wrapper">
+          <!-- Document Actions Toolbar -->
+          <div class="resume-toolbar">
+            <div class="resume-toolbar-left">
+              <span class="resume-doc-badge">PDF &bull; 2 Pages</span>
+              <span class="resume-doc-title">G.T.VASANTHAPRABHU_Resume.pdf</span>
+            </div>
+            <div class="resume-toolbar-actions">
+              <button class="btn btn-secondary trigger-resume-modal" id="page-resume-fullscreen-btn" title="Open Fullscreen Viewer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+                <span>Fullscreen</span>
+              </button>
+              <button class="btn btn-primary" id="page-print-resume-btn" onclick="window.print()" title="Print or Save as PDF">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                <span>Print / Save PDF</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Embedded ATS Document Container -->
+          <div class="resume-paper-container">
+            <div class="resume-paper">
+              <!-- Resume Header -->
+              <div class="resume-header">
+                <h1 class="resume-name">G.T.VASANTHAPRABHU</h1>
+                <div class="resume-email">
+                  <a href="mailto:vasanthaprabhu3072004@gmail.com">vasanthaprabhu3072004@gmail.com</a>
+                </div>
+                <div class="resume-contact-bar">
+                  <span class="resume-contact-item">
+                    <svg class="resume-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <a href="tel:6382368204">6382368204</a>
+                  </span>
+                  <span class="resume-contact-item">
+                    <svg class="resume-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    <a href="https://www.linkedin.com/in/vasanthaprabhu" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/vasanthaprabhu</a>
+                  </span>
+                  <span class="resume-contact-item">
+                    <svg class="resume-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <a href="https://github.com/Vasanthaprabhu7" target="_blank" rel="noopener noreferrer">https://github.com/Vasanthaprabhu7</a>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Career Objective -->
+              <div class="resume-section">
+                <h2 class="resume-section-title">CAREER OBJECTIVE</h2>
+                <p class="resume-objective-text">
+                  Motivated Enthusiastic and dedicated Computer Science Engineering graduate with a strong foundation in Python, SQL, Generative AI, and Data Analytics. Seeking an entry-level opportunity in software development, data analytics, or artificial intelligence where I can apply my technical knowledge, programming skills, and problem-solving abilities to real-world challenges. I am eager to learn new technologies, work collaboratively with teams, develop efficient and innovative solutions, and contribute to the growth and success of the organization while continuously improving my technical and professional skills.
+                </p>
+              </div>
+
+              <!-- Education -->
+              <div class="resume-section">
+                <h2 class="resume-section-title">EDUCATION</h2>
+                <div class="resume-entry">
+                  <div class="resume-entry-line">
+                    <span class="resume-entry-primary">R.V.S. COLLEGE OF ENGINEERING</span>
+                    <span class="resume-entry-secondary">2022-2026</span>
+                  </div>
+                  <div class="resume-entry-line">
+                    <span class="resume-entry-sub">Bachelor of Engineering (B.E.) – Computer Science and Engineering,Dindigul</span>
+                    <span class="resume-entry-score">CGPA:8.33</span>
+                  </div>
+                </div>
+
+                <div class="resume-entry">
+                  <div class="resume-entry-line">
+                    <span class="resume-entry-primary">VISWA VIDHYALAYA MATRIC HIGHER SEC SCHOOL</span>
+                    <span class="resume-entry-secondary">HSC:77%</span>
+                  </div>
+                  <div class="resume-entry-line">
+                    <span class="resume-entry-sub">Higher Secondary Education</span>
+                    <span class="resume-entry-score">SSLC:86%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technical Skills Table -->
+              <div class="resume-section">
+                <h2 class="resume-section-title">TECHNICAL SKILLS</h2>
+                <div class="resume-skills-table">
+                  <div class="resume-skills-col">
+                    <div class="resume-skills-col-header">PROGRAMMING LANGUAGES</div>
+                    <div class="resume-skills-col-content resume-prog-grid">
+                      <ul class="resume-bullets">
+                        <li>Python</li>
+                        <li>CSS</li>
+                        <li>ReactJS</li>
+                      </ul>
+                      <ul class="resume-bullets">
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="resume-skills-col">
+                    <div class="resume-skills-col-header">QUERY LANGUAGES</div>
+                    <div class="resume-skills-col-content">
+                      <ul class="resume-bullets">
+                        <li>SQL</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="resume-skills-col">
+                    <div class="resume-skills-col-header">GENERATIVE AI</div>
+                    <div class="resume-skills-col-content">
+                      <ul class="resume-bullets">
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>NLP, LLM</li>
+                        <li>RAG – FineTuning</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Projects -->
+              <div class="resume-section">
+                <h2 class="resume-section-title">PROJECTS</h2>
+
+                <div class="resume-entry">
+                  <div class="resume-entry-line">
+                    <span class="resume-entry-primary">Real Time Smart Blood Donation Coordination System</span>
+                    <span class="resume-entry-secondary">2025-2026</span>
+                  </div>
+                  <ul class="resume-bullets resume-project-bullets">
+                    <li>Developed a centralized platform to connect hospitals and eligible blood donors in real time.</li>
+                    <li>Matches donors based on blood group, location, and eligibility.</li>
+                    <li>Enables hospitals to send blood requests and provides instant notifications to suitable donors.</li>
+                    <li>Reduces manual coordination and delays in blood availability, supporting faster emergency response.</li>
+                  </ul>
+                </div>
+
+                <div class="resume-entry">
+                  <div class="resume-entry-line">
+                    <span class="resume-entry-primary">Social Media Analytics Using Python</span>
+                    <span class="resume-entry-secondary">2026</span>
+                  </div>
+                  <ul class="resume-bullets resume-project-bullets">
+                    <li>Analyzed social media data to identify engagement patterns and user interaction trends.</li>
+                    <li>Used Python for data processing, analysis, and extracting meaningful insights.</li>
+                    <li>Performed data analysis to understand social media performance and audience behavior.</li>
+                  </ul>
+                </div>
+
+                <div class="resume-entry">
+                  <div class="resume-entry-line">
+                    <span class="resume-entry-primary">Customer Churn Prediction</span>
+                    <span class="resume-entry-secondary">2026</span>
+                  </div>
+                  <ul class="resume-bullets resume-project-bullets">
+                    <li>Developed a machine learning project using Python to predict customer churn.</li>
+                    <li>Performed data preprocessing and exploratory data analysis using Pandas and NumPy.</li>
+                    <li>Analyzed customer patterns to identify factors affecting customer retention.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Internship -->
+              <div class="resume-section">
+                <h2 class="resume-section-title">INTERNSHIP</h2>
+                <div class="resume-entry">
+                  <div class="resume-entry-line">
+                    <span class="resume-entry-primary">Full Stack Web Development Intern</span>
+                    <span class="resume-entry-secondary">2025</span>
+                  </div>
+                  <div class="resume-intern-company">Main Flow Services and Technologies Pvt. Ltd.</div>
+                  <div class="resume-intern-date">05/07/2025 – 05/08/2025</div>
+                  <ul class="resume-bullets resume-project-bullets">
+                    <li>Gained hands-on exposure to the end-to-end web application development process.</li>
+                    <li>Worked on practical development tasks with a focus on building and improving web-based solutions.</li>
+                    <li>Enhanced understanding of application structure, development workflow, and technical implementation.</li>
+                    <li>Contributed effectively during team activities while strengthening communication and coordination skills.</li>
+                    <li>Improved analytical thinking, attention to detail, adaptability, and professional work practices through project-based learning.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Languages -->
+              <div class="resume-section">
+                <h2 class="resume-section-title">LANGUAGES</h2>
+                <ul class="resume-bullets resume-lang-bullets">
+                  <li>Tamil (Native)</li>
+                  <li>English (Conversational)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Let's Connect</div>
+          <h2 class="section-title">Get in <span class="text-gradient">Touch</span></h2>
+          <p class="section-subtitle">Interested in discussing entry-level roles, collaborative projects, or tech opportunities? Let's connect.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Contact Cards -->
+          <div class="contact-info-panel">
+            <div class="contact-card">
+              <!-- Email Item -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-icon">✉️</div>
+                  <div class="contact-meta">
+                    <span>Email Address</span>
+                    <a href="mailto:vasanthaprabhu3072004@gmail.com">vasanthaprabhu3072004@gmail.com</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="vasanthaprabhu3072004@gmail.com" data-label="Email" title="Copy Email">
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Phone Item -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-icon">📱</div>
+                  <div class="contact-meta">
+                    <span>Phone Number</span>
+                    <a href="tel:6382368204">+91 6382368204</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="6382368204" data-label="Phone" title="Copy Phone Number">
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- LinkedIn Item -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-icon">💼</div>
+                  <div class="contact-meta">
+                    <span>LinkedIn Profile</span>
+                    <a href="https://www.linkedin.com/in/vasanthaprabhu" target="_blank" rel="noopener noreferrer">linkedin.com/in/vasanthaprabhu</a>
+                  </div>
+                </div>
+                <a href="https://www.linkedin.com/in/vasanthaprabhu" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                  <span>Visit</span>
+                </a>
+              </div>
+
+              <!-- GitHub Item -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-icon">💻</div>
+                  <div class="contact-meta">
+                    <span>GitHub Repositories</span>
+                    <a href="https://github.com/Vasanthaprabhu7" target="_blank" rel="noopener noreferrer">github.com/Vasanthaprabhu7</a>
+                  </div>
+                </div>
+                <a href="https://github.com/Vasanthaprabhu7" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                  <span>Visit</span>
+                </a>
+              </div>
+
+              <!-- Location Item -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-meta">
+                    <span>Location</span>
+                    <strong>Dindigul, Tamil Nadu, India</strong>
+                  </div>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--accent-emerald);">Open to Relocation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Henderson" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email Address</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="e.g. alex@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Software Engineer Role Inquiry" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" class="form-control" placeholder="Hi Vasanthaprabhu, I came across your portfolio and would like to connect..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn" id="contact-submit-btn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copyright">
+        &copy; 2026 <strong>G. T. Vasanthaprabhu</strong>. Built with modern HTML5, Vanilla CSS3 & JS. All rights reserved.
+      </div>
+      <a href="#hero" class="back-to-top-btn" id="back-to-top">
+        <span>Back to Top</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT DEEP-DIVE MODAL ==================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-body" id="project-modal-body">
+        <!-- Content injected dynamically via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== RESUME VIEWER & PRINT MODAL ==================== -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true">
+    <div class="modal-content resume-modal-content">
+      <button class="modal-close-btn" id="resume-modal-close" aria-label="Close modal">✕</button>
+      
+      <div class="resume-actions-bar">
+        <button class="btn btn-primary" id="print-resume-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print / Save as PDF</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Printable Paper Representation of Resume -->
+        <div class="resume-paper" id="resume-print-area">
+          <!-- Resume Header -->
+          <div class="resume-header">
+            <h1 class="resume-name">G.T.VASANTHAPRABHU</h1>
+            <div class="resume-email">
+              <a href="mailto:vasanthaprabhu3072004@gmail.com">vasanthaprabhu3072004@gmail.com</a>
+            </div>
+            <div class="resume-contact-bar">
+              <span class="resume-contact-item">
+                <svg class="resume-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <a href="tel:6382368204">6382368204</a>
+              </span>
+              <span class="resume-contact-item">
+                <svg class="resume-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <a href="https://www.linkedin.com/in/vasanthaprabhu" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/vasanthaprabhu</a>
+              </span>
+              <span class="resume-contact-item">
+                <svg class="resume-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <a href="https://github.com/Vasanthaprabhu7" target="_blank" rel="noopener noreferrer">https://github.com/Vasanthaprabhu7</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Career Objective -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">CAREER OBJECTIVE</h2>
+            <p class="resume-objective-text">
+              Motivated Enthusiastic and dedicated Computer Science Engineering graduate with a strong foundation in Python, SQL, Generative AI, and Data Analytics. Seeking an entry-level opportunity in software development, data analytics, or artificial intelligence where I can apply my technical knowledge, programming skills, and problem-solving abilities to real-world challenges. I am eager to learn new technologies, work collaboratively with teams, develop efficient and innovative solutions, and contribute to the growth and success of the organization while continuously improving my technical and professional skills.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">EDUCATION</h2>
+            <div class="resume-entry">
+              <div class="resume-entry-line">
+                <span class="resume-entry-primary">R.V.S. COLLEGE OF ENGINEERING</span>
+                <span class="resume-entry-secondary">2022-2026</span>
+              </div>
+              <div class="resume-entry-line">
+                <span class="resume-entry-sub">Bachelor of Engineering (B.E.) – Computer Science and Engineering,Dindigul</span>
+                <span class="resume-entry-score">CGPA:8.33</span>
+              </div>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-line">
+                <span class="resume-entry-primary">VISWA VIDHYALAYA MATRIC HIGHER SEC SCHOOL</span>
+                <span class="resume-entry-secondary">HSC:77%</span>
+              </div>
+              <div class="resume-entry-line">
+                <span class="resume-entry-sub">Higher Secondary Education</span>
+                <span class="resume-entry-score">SSLC:86%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills Table -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">TECHNICAL SKILLS</h2>
+            <div class="resume-skills-table">
+              <div class="resume-skills-col">
+                <div class="resume-skills-col-header">PROGRAMMING LANGUAGES</div>
+                <div class="resume-skills-col-content resume-prog-grid">
+                  <ul class="resume-bullets">
+                    <li>Python</li>
+                    <li>CSS</li>
+                    <li>ReactJS</li>
+                  </ul>
+                  <ul class="resume-bullets">
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="resume-skills-col">
+                <div class="resume-skills-col-header">QUERY LANGUAGES</div>
+                <div class="resume-skills-col-content">
+                  <ul class="resume-bullets">
+                    <li>SQL</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="resume-skills-col">
+                <div class="resume-skills-col-header">GENERATIVE AI</div>
+                <div class="resume-skills-col-content">
+                  <ul class="resume-bullets">
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>NLP, LLM</li>
+                    <li>RAG – FineTuning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">PROJECTS</h2>
+
+            <div class="resume-entry">
+              <div class="resume-entry-line">
+                <span class="resume-entry-primary">Real Time Smart Blood Donation Coordination System</span>
+                <span class="resume-entry-secondary">2025-2026</span>
+              </div>
+              <ul class="resume-bullets resume-project-bullets">
+                <li>Developed a centralized platform to connect hospitals and eligible blood donors in real time.</li>
+                <li>Matches donors based on blood group, location, and eligibility.</li>
+                <li>Enables hospitals to send blood requests and provides instant notifications to suitable donors.</li>
+                <li>Reduces manual coordination and delays in blood availability, supporting faster emergency response.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-line">
+                <span class="resume-entry-primary">Social Media Analytics Using Python</span>
+                <span class="resume-entry-secondary">2026</span>
+              </div>
+              <ul class="resume-bullets resume-project-bullets">
+                <li>Analyzed social media data to identify engagement patterns and user interaction trends.</li>
+                <li>Used Python for data processing, analysis, and extracting meaningful insights.</li>
+                <li>Performed data analysis to understand social media performance and audience behavior.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-line">
+                <span class="resume-entry-primary">Customer Churn Prediction</span>
+                <span class="resume-entry-secondary">2026</span>
+              </div>
+              <ul class="resume-bullets resume-project-bullets">
+                <li>Developed a machine learning project using Python to predict customer churn.</li>
+                <li>Performed data preprocessing and exploratory data analysis using Pandas and NumPy.</li>
+                <li>Analyzed customer patterns to identify factors affecting customer retention.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Internship -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">INTERNSHIP</h2>
+            <div class="resume-entry">
+              <div class="resume-entry-line">
+                <span class="resume-entry-primary">Full Stack Web Development Intern</span>
+                <span class="resume-entry-secondary">2025</span>
+              </div>
+              <div class="resume-intern-company">Main Flow Services and Technologies Pvt. Ltd.</div>
+              <div class="resume-intern-date">05/07/2025 – 05/08/2025</div>
+              <ul class="resume-bullets resume-project-bullets">
+                <li>Gained hands-on exposure to the end-to-end web application development process.</li>
+                <li>Worked on practical development tasks with a focus on building and improving web-based solutions.</li>
+                <li>Enhanced understanding of application structure, development workflow, and technical implementation.</li>
+                <li>Contributed effectively during team activities while strengthening communication and coordination skills.</li>
+                <li>Improved analytical thinking, attention to detail, adaptability, and professional work practices through project-based learning.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">LANGUAGES</h2>
+            <ul class="resume-bullets resume-lang-bullets">
+              <li>Tamil (Native)</li>
+              <li>English (Conversational)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
