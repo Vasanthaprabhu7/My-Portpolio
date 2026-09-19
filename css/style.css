@@ -2414,10 +2414,10 @@ textarea.form-control {
   body * {
     visibility: hidden;
   }
-  #resume-print-area, #resume-print-area * {
-    visibility: visible;
+  .resume-paper, .resume-paper * {
+    visibility: visible !important;
   }
-  #resume-print-area {
+  .resume-paper {
     position: absolute;
     left: 0;
     top: 0;
@@ -2428,44 +2428,65 @@ textarea.form-control {
     color: #000000 !important;
     box-shadow: none !important;
     border-radius: 0 !important;
+    border: none !important;
   }
-  #resume-print-area .resume-name,
-  #resume-print-area .resume-email,
-  #resume-print-area .resume-email a,
-  #resume-print-area .resume-contact-item,
-  #resume-print-area .resume-contact-item a,
-  #resume-print-area .resume-section-title,
-  #resume-print-area .resume-objective-text,
-  #resume-print-area .resume-entry-primary,
-  #resume-print-area .resume-entry-secondary,
-  #resume-print-area .resume-entry-sub,
-  #resume-print-area .resume-entry-score,
-  #resume-print-area .resume-skills-col-header,
-  #resume-print-area .resume-bullets li,
-  #resume-print-area .resume-intern-company,
-  #resume-print-area .resume-intern-date,
-  #resume-print-area .resume-lang-bullets li {
+  .resume-paper .resume-name,
+  .resume-paper .resume-email,
+  .resume-paper .resume-email a,
+  .resume-paper .resume-contact-item,
+  .resume-paper .resume-contact-item a,
+  .resume-paper .resume-section-title,
+  .resume-paper .resume-objective-text,
+  .resume-paper .resume-entry-primary,
+  .resume-paper .resume-entry-secondary,
+  .resume-paper .resume-entry-sub,
+  .resume-paper .resume-entry-score,
+  .resume-paper .resume-skills-col-header,
+  .resume-paper .resume-bullets li,
+  .resume-paper .resume-intern-company,
+  .resume-paper .resume-intern-date,
+  .resume-paper .resume-lang-bullets li {
     color: #000000 !important;
   }
-  #resume-print-area .resume-icon {
+  .resume-paper .resume-icon {
     stroke: #000000 !important;
   }
-  #resume-print-area .resume-section-title {
+  .resume-paper .resume-section-title {
     border-bottom: 1.5px solid #000000 !important;
   }
-  #resume-print-area .resume-skills-table {
+  .resume-paper .resume-skills-table {
     border: 1.5px solid #000000 !important;
     background: transparent !important;
   }
-  #resume-print-area .resume-skills-col {
+  .resume-paper .resume-skills-col {
     border-right: 1.5px solid #000000 !important;
   }
-  #resume-print-area .resume-skills-col-header {
+  .resume-paper .resume-skills-col-header {
     border-bottom: 1.5px solid #000000 !important;
     background: transparent !important;
   }
-  .modal-backdrop, .modal-close-btn, .resume-actions-bar, .resume-toolbar, .resume-toolbar-actions {
+  header, footer, .hero-section, .about-section, .skills-section, .experience-section, .projects-section, .contact-section,
+  .modal-close-btn, .resume-actions-bar, .resume-toolbar, .resume-toolbar-actions {
     display: none !important;
+  }
+  .modal-backdrop {
+    background: transparent !important;
+    padding: 0 !important;
+    position: static !important;
+  }
+  .modal-content {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .resume-paper-container {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
   }
   .resume-section {
     page-break-inside: avoid;
